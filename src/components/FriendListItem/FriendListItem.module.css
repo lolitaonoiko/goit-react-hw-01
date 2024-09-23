@@ -1,0 +1,24 @@
+.box {
+  border: 2px solid gray;
+  width: 110px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  transition: transform 350ms ease-in-out;
+}
+.box:hover {
+  transform: scale(1.05);
+}
+.name {
+  font-size: 22px;
+  color: gray;
+}
+.online {
+  color: rgb(2, 141, 2);
+}
+.offline {
+  color: rgb(197, 42, 28);
+}

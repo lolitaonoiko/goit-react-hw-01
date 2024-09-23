@@ -1,25 +1,31 @@
+import styles from "./Profile.module.css";
+
 export default function Profile({ name, tag, location, image, stats }) {
   return (
-    <div>
-      <div>
-        <img src={image} alt="User avatar" />
-        <p>{name}</p>
-        <p>@p{tag}</p>
-        <p>{location}</p>
+    <div className={styles["box-profile"]}>
+      <div className={styles["photo-box"]}>
+        <img
+          className={styles["photo-profile"]}
+          src={image}
+          alt="User avatar"
+        />
+        <p className={styles["name-profile"]}>{name}</p>
+        <p className={styles["tag-profile"]}>@{tag}</p>
+        <p className={styles["location-profile"]}>{location}</p>
       </div>
 
       <ul>
-        <li>
-          <span>Followers</span>
-          <span>{stats.followers}</span>
+        <li className={styles["list-item"]}>
+          <span className={styles["stats-names"]}>Followers</span>
+          <span className={styles["followers-number"]}>{stats.followers}</span>
         </li>
-        <li>
-          <span>Views</span>
-          <span>{stats.views}</span>
+        <li className={styles["list-item"]}>
+          <span className={styles["stats-names"]}>Views</span>
+          <span className={styles["followers-number"]}>{stats.views}</span>
         </li>
-        <li>
-          <span>Likes</span>
-          <span>{stats.likes}</span>
+        <li className={styles["list-item"]}>
+          <span className={styles["stats-names"]}>Likes</span>
+          <span className={styles["followers-number"]}>{stats.likes}</span>
         </li>
       </ul>
     </div>

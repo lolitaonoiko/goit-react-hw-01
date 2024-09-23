@@ -1,0 +1,73 @@
+.box-profile {
+  width: 300px;
+  border: 2px solid gray;
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.photo-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  padding: 20px;
+}
+.photo-profile {
+  width: 140px;
+  border-radius: 50%;
+  background-color: gray;
+}
+.name-profile {
+  font-weight: 600;
+  font-size: 24px;
+  color: darkgray;
+}
+.stats-names {
+  color: rgb(190, 171, 82);
+  transition: color 300ms ease-in-out;
+}
+
+.tag-profile,
+.location-profile {
+  color: darkgray;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  border-right: 2px solid gray;
+  padding: 6px;
+  background-color: lightgray;
+  gap: 6px;
+  transition: background-color 300ms ease-in-out, transform 300ms ease-in-out;
+}
+.list-item:hover .stats-names {
+  color: gray;
+}
+.list-item:hover {
+  background-color: rgba(243, 218, 109, 0.768);
+  transform: scale(1.01);
+}
+.list-item:last-child {
+  border: none;
+  border-bottom-right-radius: 12px;
+}
+.list-item:first-child {
+  border-bottom-left-radius: 12px;
+}
+div.box-profile > ul {
+  display: flex;
+
+  justify-content: center;
+  border-top: 2px solid gray;
+
+  width: 100%;
+}
+.followers-number {
+  font-weight: 600;
+  color: gray;
+}

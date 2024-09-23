@@ -1,0 +1,24 @@
+.table {
+  border: 2px solid gray;
+  margin: 0 auto;
+}
+.head-name {
+  width: 200px;
+  background-color: lightgray;
+  color: rgb(168, 136, 29);
+  font-weight: 400;
+}
+.table-body > tr:nth-of-type(even) {
+  background-color: lightgray;
+}
+.table-item > td {
+  text-align: center;
+  color: gray;
+  transition: color 350ms ease-in-out, background-color 350ms ease-in-out,
+    transform 350ms ease-in-out;
+}
+.table-item:hover td {
+  color: #fff;
+  background-color: gray;
+  transform: scale(1.03);
+}
